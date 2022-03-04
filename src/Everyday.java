@@ -1,8 +1,12 @@
-public class Everyday extends Account {
+public class Everyday implements Account1, Account2 {
 
-    public Everyday(double balance) {
 
-        super(balance);
+    public Everyday() {
     }
 
+
+    @Override
+    public double name(String a) {
+        return 0;
+    }
 }

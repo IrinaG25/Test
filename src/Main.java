@@ -9,14 +9,13 @@ public class Main {
         System.out.println("What  kind of account would you like to open?");
         System.out.println("1)Anabari;\n 2)Everyday;\n 3)Credit;\n 4)Vip");
         int answer = sc.nextInt();
+
         if (answer == 1) {
             class1 = new Anabari(3000, 10);
         } else if (answer == 2) {
-            class1 = new Everyday(2000);
+//            class1 = new Everyday();
         } else if (answer == 3) {
             class1 = new Credit(3000);
-        } else {
-            class1 = new Vip(2000);
         }
 
         if (class1 != null) {

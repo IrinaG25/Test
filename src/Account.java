@@ -1,13 +1,11 @@
 import java.util.Scanner;
 
-public class Account {
+public abstract class Account {
 
     public double balance;
 
-
     public Account(double balance) {
         this.balance = balance;
-
     }
 
     public double depositFee(double deposit) {
@@ -31,5 +29,23 @@ public class Account {
         return balance;
     }
 
+    double name() {  //default
+        return 0;
+    }
+}
+
+interface Account1 {
+    public final static int A = 1;
+
+    double name(String a); //public abstract
+}
+
+interface Account2 {
+    public final static int A = 1;
+
+    double name(String a); //public abstract
+}
+
+class Abc{
 
 }
